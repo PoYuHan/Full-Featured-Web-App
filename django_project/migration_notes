@@ -1,0 +1,10 @@
+
+python manage.py makemigrations + migrate after you change your SQL setting, it will make changes for us.
+
+python manage.py sqlmigrate + migration to view the SQL command.
+
+python manage.py shell to open the SQL python shell, then you can use the python to grab the data in database (I guess!!).
+i.e. after "from django.contrib.auth.models import User", you can grab user data by "User.objects.all()", or "User.objects.filter(username='py')"
+Then use "user = User.objects.filter(username='py').first() to set the result to a variable.
+
+from blog.models import Post
